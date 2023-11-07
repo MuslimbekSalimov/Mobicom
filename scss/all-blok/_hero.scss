@@ -1,0 +1,129 @@
+.hero {
+    padding-top: 82px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px;
+    }
+}
+.hero__info {
+    animation: hero 1s ease-in-out;
+}
+
+@keyframes hero {
+    from {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.hero__heading {
+    max-width: 590px;
+    color: #36536B;
+    font-family: "Inter";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; 
+    letter-spacing: -0.554px;
+}
+
+.hero__text {
+    max-width: 545px;
+    color: #36536B;
+    font-family: "Inter";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    padding-bottom: 30px;
+}
+
+.link__div {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero__link {
+    padding: 12px 36px;
+    background-color: #1DB5BE;
+    border-radius: 6px;
+    margin-top: 30px;
+
+    color: #000;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
+    &:hover {
+        background-color: #000;
+        color: #FFF;
+        transition: 0.5s ease-in-out;
+    }
+
+    &:focus {
+        opacity: 0.5;
+    }
+}
+
+.hero__link1 {
+    background-color: #c5c5c5;
+}
+
+@media only screen and (max-width:950px) {
+    .hero {
+        .container {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .hero__info {
+        text-align: center;
+    }
+
+    .link__div {
+        text-align: center;
+    }
+}
+
+
+    @media only screen and (max-width:570px) {
+        .hero__heading {
+            font-size: 56px;
+            max-width: 490px;
+        }
+
+        .hero__text {
+            font-size: 15px;
+            max-width: 450px;
+        }
+    }
+
+    @media only screen and (max-width:460px) {
+        .hero__heading {
+            font-size: 36px;
+            max-width: 300px;
+        }
+
+        .hero__text {
+            font-size: 15px;
+            max-width: 300px;
+        }
+
+        .hero__info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }

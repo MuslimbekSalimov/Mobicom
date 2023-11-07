@@ -1,0 +1,355 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v13-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", "sans-serif";
+  font-size: 18px;
+  line-height: normal;
+  background: #F9F9F9;
+  background: #EDF3F8;
+}
+body ::-moz-selection {
+  background-color: darkblue;
+  color: #EDF3F8;
+}
+body ::selection {
+  background-color: darkblue;
+  color: #EDF3F8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 10px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__span {
+  color: #111827;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.nav__heading {
+  color: #1DB5BE;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.nav__heading:hover {
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+.nav__heading:hover:focus {
+  color: rebeccapurple;
+}
+
+.btn__div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link__img {
+  margin-right: 10px;
+  border-radius: 70px;
+}
+
+.link {
+  padding: 8px 30px;
+  background-color: #FFF;
+  border-radius: 8px;
+  color: #111827;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 10px;
+}
+.link:hover {
+  background-color: #111827;
+  transition: all 0.5s ease-in-out;
+  color: #36536B;
+}
+.link:hover:focus {
+  background-color: #1DB5BE;
+}
+
+.btn {
+  border: none;
+  background-color: #FFF;
+  display: none;
+}
+
+.btn__menu {
+  display: none;
+}
+
+.btn__exit {
+  display: none;
+}
+
+.link1 {
+  display: none;
+}
+
+@media only screen and (max-width: 1228px) {
+  .nav {
+    display: none;
+  }
+  .btn {
+    display: block;
+  }
+  .btn__menu {
+    display: block;
+  }
+  .menu__exit {
+    display: none;
+  }
+  .exit__menu {
+    display: block;
+  }
+  .nav__blok {
+    display: block;
+    position: absolute;
+    background-color: #111827;
+    top: 100px;
+    width: 50%;
+    height: 70%;
+    border-radius: 8px;
+    text-align: center;
+    right: 20px;
+    padding-right: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: nav__blosk 1s ease-in;
+  }
+  .nav__blok :hover {
+    color: #FFF;
+    padding: 10px 20px;
+    background-color: #1DB5BE;
+    border-radius: 8px;
+    transition: 0.5s ease;
+  }
+  @keyframes nav__blosk {
+    from {
+      transform: translateX(80%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  .link {
+    display: none;
+  }
+  .link1 {
+    display: block;
+  }
+}
+.hero {
+  padding-top: 82px;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.hero__info {
+  animation: hero 1s ease-in-out;
+}
+
+@keyframes hero {
+  from {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.hero__heading {
+  max-width: 590px;
+  color: #36536B;
+  font-family: "Inter";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.554px;
+}
+
+.hero__text {
+  max-width: 545px;
+  color: #36536B;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+
+.link__div {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__link {
+  padding: 12px 36px;
+  background-color: #1DB5BE;
+  border-radius: 6px;
+  margin-top: 30px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.hero__link:hover {
+  background-color: #000;
+  color: #FFF;
+  transition: 0.5s ease-in-out;
+}
+.hero__link:focus {
+  opacity: 0.5;
+}
+
+.hero__link1 {
+  background-color: #c5c5c5;
+}
+
+@media only screen and (max-width: 950px) {
+  .hero .container {
+    flex-direction: column-reverse;
+  }
+  .hero__info {
+    text-align: center;
+  }
+  .link__div {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .hero__heading {
+    font-size: 56px;
+    max-width: 490px;
+  }
+  .hero__text {
+    font-size: 15px;
+    max-width: 450px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .hero__heading {
+    font-size: 36px;
+    max-width: 300px;
+  }
+  .hero__text {
+    font-size: 15px;
+    max-width: 300px;
+  }
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=main.min.css.map */

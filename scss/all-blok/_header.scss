@@ -1,0 +1,167 @@
+.header {
+    padding-top: 10px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header__span {
+    color: #111827;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.nav__heading {
+    color:  #1DB5BE;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+
+    &:hover {
+        color: black;
+        transition: all 0.4s ease-in-out;
+    }
+
+    &:hover:focus {
+        color: rebeccapurple;
+
+    }
+}
+
+.btn__div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link__img {
+    margin-right: 10px;
+    border-radius: 70px;
+}
+
+.link {
+    padding: 8px 30px;
+    background-color:#FFF;
+    border-radius: 8px;
+
+    color:#111827;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 10px;
+
+    &:hover {
+        background-color: #111827;
+        transition: all 0.5s ease-in-out;
+        color: #36536B;
+    }
+
+    &:hover:focus {
+        background-color:#1DB5BE;
+        
+    }
+}
+
+.btn {
+    border: none;
+    background-color: #FFF;
+    display: none;
+}
+
+.btn__menu {
+    display: none;
+}
+
+.btn__exit {
+    display: none;
+}
+
+.link1 {
+    display: none;
+}
+
+@media only screen and ( max-width: 1228px ) {
+    .nav {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+
+    .menu__exit {
+        display: none;
+    }
+
+    .exit__menu {
+        display: block;
+    }
+
+    .nav__blok {
+        display: block;
+        position: absolute;
+        background-color: #111827;
+        top: 100px;
+        width: 50%;
+        height: 70%;
+        border-radius: 8px;
+        text-align: center;
+        right: 20px;
+        padding-right: 50px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        animation: nav__blosk  1s ease-in;
+
+        & :hover {
+            color: #FFF;
+            padding: 10px 20px;
+            background-color:#1DB5BE;
+            border-radius: 8px;
+            transition: 0.5s ease;
+        }
+    }
+
+    @keyframes nav__blosk {
+        
+        from {
+            transform: translateX(80%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and ( max-width:460px) {
+    .link {
+        display: none;
+    }
+
+    .link1 {
+        display: block;
+    }
+}
