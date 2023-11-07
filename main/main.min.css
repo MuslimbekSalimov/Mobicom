@@ -292,6 +292,10 @@ li, a {
   gap: 20px;
 }
 
+.hero__img {
+  border-radius: 52px;
+}
+
 .hero__link {
   padding: 12px 36px;
   background-color: #1DB5BE;
@@ -351,5 +355,58 @@ li, a {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+}
+.exsel {
+  padding-top: 120px;
+  margin-bottom: 200px;
+}
+.exsel .container {
+  text-align: center;
+}
+
+.input {
+  padding: 10px 23px;
+  border-radius: 8px;
+  border: 2px solid blue;
+}
+
+.input__yellow {
+  background-color: yellow;
+}
+
+.input__green {
+  background-color: green;
+}
+
+.input__blue {
+  background-color: blue;
+}
+
+.exsel__id {
+  padding: 13px 40px;
+  background-color: #1DB5BE;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 50px;
+  position: absolute;
+  transform: translate(-560px, 40px);
+}
+
+@media only screen and (max-width: 1080px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+  }
+  .labl {
+    text-align: center;
+  }
+  .exsel__id {
+    transform: translate(0);
+    text-align: center;
   }
 }/*# sourceMappingURL=main.min.css.map */
