@@ -108,3 +108,19 @@
         width: 180px;
     }
 }
+
+@media only screen and ( max-width:360px) {
+    .heading {
+        font-size: 34px;
+    }
+
+    .hero__span {
+        font-size: 36px;
+        width: 200px;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 180px;
+    } 
+}
