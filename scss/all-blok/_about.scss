@@ -32,3 +32,34 @@
     color: #FFF;
     font-family: "Inter";
 }
+
+@media only screen and (max-width:1230px) {
+    .about__item {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:642px) {
+   .about {
+    img {
+        max-width: 300px;
+    }
+   }
+
+   .about__heading1 {
+    font-size: 14px;
+   }
+
+   .about__heading {
+    font-size: 29px;
+   }
+}
+
+@media only screen and (max-width:642px) {
+    .about {
+        img {
+            max-width: 200px;
+        }
+       }
+    
+}
