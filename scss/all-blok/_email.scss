@@ -37,4 +37,26 @@
     color: #000;
     font-size: "Inter";
     background-color: #FFF;
+
+    &:hover {
+        background-color: #000;
+        color: #FFF;
+        transition:  0.5s ease-in-out;
+    }
+
+    &:focus {
+        opacity: 0.4;
+    }
+}
+
+@media only screen and (max-width:485px) {
+    .input {
+        max-width: 220px;
+        height: 30px;
+    }
+
+    .email__btn {
+        max-width: 220px;
+        height: 30px;
+    }
 }
